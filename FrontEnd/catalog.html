@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style> 
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap" rel="stylesheet">
 
+    <link rel = "stylesheet" href = "style.css"> 
     <link rel="icon" href="images/newlogo.png" type="x-icon">
     <title>LinkSphere</title>
 </head>
@@ -17,20 +16,16 @@
 <body>
     <!--Header-->
     <header style = "display: flex; align-items: center; padding: 10px; position: relative;">
-        <a href = "main.html" style = "position: absolute; text-decoration: none;">
-        <img src="images/newlogo.png" style = "width: 50px; height: auto;" alt="logo1" class="logo">
-        <img src="images/link.png" style = "position: absolute; left: 50px; width: 50px; top: 20px;" alt="logo2" class="logo">
-        <img src="images/sphere.png" style= "position: absolute; left: 100px; width: 50px; top: 23px;" alt="logo2" class="logo">
+        <a href = "main.html" style = "position: relative; text-decoration: none;">
+        <img src="images/newlogo.png" style = "width: 50px; height: auto">
+        <img src="images/link.png" style = "position: absolute; left: 50px; width: 50px; top: 20px">
+        <img src="images/sphere.png" style= "position: absolute; left: 100px; width: 50px; top: 23px">
         </a>
 
-        <nav style = "position: relative; left: 1050px">
-            <a href = "catalog.html" style = "font-size: 25px; font-family: Archivo Narrow; text-decoration: none; color:darkslateblue ;"> SHOP </a>
-        </nav>
-        <nav style = "position: relative; left: 1150px">
-            <a href = "cart.html" style = "font-size: 25px; font-family: Archivo Narrow;text-decoration: none; color: darkslateblue"> CART </a>
-        </nav>
-        <nav style = "position: relative; left: 1250px">
-            <a href = "profile.html" style = "font-size: 25px; font-family: Archivo Narrow;text-decoration: none; color: darkslateblue"> PROFILE </a>
+        <nav class="navbar">
+            <a href="catalog.html" class="button">SHOP</a>
+            <a href="cart.html" class="button">CART</a>
+            <a href="profile.html" class="button">PROFILE</a>
         </nav>
     </header>
 
@@ -40,25 +35,25 @@
         <div>
             <div style="display: inline-flex; justify-content: space-evenly; padding: 20px; margin-top: 40px; margin-left: 10px; margin-right: 10px; inline-size: 20%;">
                 <div style = "display: inline; flex-direction: column;">
-                    <img src = "images/gamingmouse.png" style = "position: relative; width: 250px;height: 250px;"> 
+                    <img src = "images/gamingmouse.png" class = "zoom-image" style = "position: relative; width: 250px;height: 250px"> 
                     <h1 style = "position: relative;font-size: 25px; text-align: center;"> Mouses</h1>
                 </div>
             </div>
             <div style="display: inline-flex; justify-content: space-evenly; padding: 20px; margin-top: 40px; margin-left: 10px; margin-right: 10px; inline-size: 20%;">
                 <div style = "display: inline; flex-direction: column;">
-                    <img src = "images/gamingkeyboard.png" style = "position: relative; width: 250px; height: 250px;">  
+                    <img src = "images/gamingkeyboard.png" class = "zoom-image" style = "position: relative; width: 250px; height: 250px">  
                     <h1 style = "position: relative;font-size: 25px; text-align: center;"> Keyboards</h1>
                 </div>
             </div>
             <div style="display: inline-flex; justify-content: space-evenly; padding: 20px; margin-top: 40px; margin-left: 10px; margin-right: 10px; inline-size: 20%;">
                 <div style = "display: inline; flex-direction: column;">
-                    <img src = "images/camera.png" style = "position: relative; width: 250px; height: 250px;"> 
+                    <img src = "images/camera.png" class = "zoom-image" style = "position: relative; width: 250px; height: 250px"> 
                     <h1 style = "position: relative;font-size: 25px; text-align: center;"> Cameras</h1>
                 </div>
             </div>
             <div style="display: inline-flex; justify-content: space-evenly; padding: 20px; margin-top: 40px; margin-left: 10px; margin-right: 10px; inline-size: 20%;">
                 <div style = "display: inline; flex-direction: column;">
-                    <img src = "images/headphones.png" style = "position: relative; width: 250px; height: 250px;">  
+                    <img src = "images/headphones.png" class = "zoom-image" style = "position: relative; width: 250px; height: 250px">  
                     <h1 style = "position: relative;font-size: 25px; text-align: center;"> Headphones</h1>
                 </div>
             </div>
@@ -66,8 +61,23 @@
     </main>
 
     <!--Нижняя шапка-->
-    <footer style = "margin: 0; padding: 20px;background-color: gray;color: white; text-align: center; "> 
-        <p>©Copyright 2024 by Danial and Anvar. All rights reserved.</p>
+    <footer class="footer" style="display: flex; justify-content: flex-start; align-items: flex-start; padding-left: 70px; padding-top: 10px;">
+        <div style="display: flex; flex-direction: column">
+            <h3 class="footer-bigtext">About</h3>
+            <p class="footer-text">LinkSphere story</p>
+            <p class="footer-text">Blog</p>
+            <p class="footer-text">Contact us</p>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <h3 class="footer-bigtext" style = "margin-left: 280px">Customers</h3>
+            <p class="footer-text" style="margin-left: 280px">Return policy</p>
+            <p class="footer-text" style="margin-left: 280px">Student discount</p>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <h3 class="footer-bigtext" style = "margin-left: 300px">Partners</h3>
+            <p class="footer-text" style= "margin-left: 300px">Investors</p>
+        </div>
     </footer>
 </body>
 </html>
+
