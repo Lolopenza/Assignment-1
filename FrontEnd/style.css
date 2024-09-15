@@ -1,7 +1,7 @@
 .navbar {
     display: flex;               
-    justify-content: flex-end;    /* Элементы выравниваются по правому краю */
-    align-items: center;          /* Вертикальное выравнивание элементов по центру */
+    justify-content: flex-end;   
+    align-items: center;         
     position: absolute;         
     top: 0;                       
     right: 50px;                 
