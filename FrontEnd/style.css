@@ -1,0 +1,44 @@
+.navbar {
+    display: flex;               
+    justify-content: flex-end;    /* Элементы выравниваются по правому краю */
+    align-items: center;          /* Вертикальное выравнивание элементов по центру */
+    position: absolute;         
+    top: 0;                       
+    right: 50px;                 
+    height: 80px;                
+}
+.button {
+    font-size: 25px; 
+    font-family: Archivo Narrow; 
+    text-decoration: none; 
+    color:darkslateblue;
+    cursor: pointer;
+    transition: transform 1s ease;
+    margin-left: 100px;
+}
+.button:hover {
+    transform: scale(1.2);
+}
+.footer {
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(46, 46, 46);
+    color: white; 
+}
+.footer-bigtext {
+    font-size: 19px;
+    font-family: Archivo Narrow;
+}
+.footer-text {
+    font-size: 17px;
+    font-family: Archivo Narrow;
+    color: rgb(188, 180, 180);
+    cursor: pointer;
+}
+.zoom-image {
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+.zoom-image:hover {
+    transform: scale(1.2); 
+}
